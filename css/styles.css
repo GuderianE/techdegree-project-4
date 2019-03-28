@@ -337,6 +337,15 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial sans-sarif;
+}
+
+p {
+  font-size: 1.2em;
+}
+
 .grid__row {
   padding: 1em 10px;
   display: flex;

@@ -1,3 +1,14 @@
 // ======================================
 //  Mixins
 // ======================================
+
+@mixin flexy(
+    $disp: flex,
+    $wrap: null, 
+    $just: null, 
+    $dir: null) {
+    display: $disp;
+    flex-wrap: $wrap;
+    flex-direction: $dir;
+    justify-content: $just;
+}

@@ -8,11 +8,10 @@ $font-url--google       : 'https://fonts.googleapis.com/css?family=Raleway Titil
 $font-family--primary   : 'Raleway', 'Helvetica Neue', Helvetica, Arial sans-sarif;
 $font-family--secondary : 'Titillium Web', Arial, 'Helvetica Neue';
 
-
-// font-weight
-$font-weight: 1em;
-
 // text
+$font-size--p: 1.2em;
+$font-size--h: 2em;
+$font-weight--h: bold;
 
 // colors
 $color--primary: blue;
@@ -24,3 +23,5 @@ $breakpoints: (
     'sm': 480px,
     'lg': 1400px
 );
+
+
