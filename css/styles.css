@@ -1,3 +1,13 @@
+.form .btn--default {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  transition-property: background-color;
+  transition-duration: 500ms;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -509,6 +519,28 @@ ul {
 .nav__item:hover {
   background-color: rgba(36, 121, 85, 0.877);
   transition-delay: 200ms;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+.form .input {
+  width: 50%;
+  margin-top: 20px;
+  border-bottom: solid 2px rgba(7, 23, 16, 0.877);
+}
+.form .btn--default {
+  background-color: rgba(36, 121, 85, 0.877);
+}
+.form .btn--default:hover {
+  background-color: rgba(81, 203, 152, 0.877);
+}
+
+.card {
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */

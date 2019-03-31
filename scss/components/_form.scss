@@ -1,0 +1,23 @@
+// ======================================
+//  Form
+// ======================================
+
+.form {
+    @include flexy($dir: column, $just: center);
+    margin: 20px;
+
+    .input {
+    width: 50%;
+    margin-top: 20px;
+    border-bottom: solid 2px $color-base--dark;
+    }
+    
+    .btn--default {
+        background-color: $color--base;
+        @extend %theme__colors;
+        &:hover {
+            background-color: $color-base--light;
+        }
+    }
+
+}

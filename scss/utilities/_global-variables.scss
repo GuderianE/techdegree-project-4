@@ -15,6 +15,8 @@ $font-weight--h: bold;
 $line--height: 1.9em;
 
 // colors
+$white: #fff;
+
 $color--base: rgba(36, 121, 85, 0.877);
 $color-base--dark: darken($color--base, 25%);
 $color-base--light: lighten($color--base, 25%);
