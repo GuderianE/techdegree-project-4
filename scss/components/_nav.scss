@@ -4,10 +4,10 @@
 
 
 .nav__item {
-  margin: 10px;
-  padding: 10px;
+  margin: 1em;
+  padding: 1em;
   line-height: $line--height;
-  border-radius: 10px;
+  border-radius: 1em;
   transition-duration: 500ms;
   &:hover {
     background-color: $color--base;

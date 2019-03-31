@@ -3,5 +3,20 @@
 // ======================================
 
 .card {
+    width: 90%;
+    margin-left: 1.5em;
     text-align: left;
+
+    .headline--primary {
+        width: 70%;
+        margin-left: .8em;
+        color: $complement;
+        font-weight: $font-weight--h;
+        font-size: $font-size--h;
+    }
+
+    .link {
+        color: $color-base--light;
+        font-weight: $font-weight--h;
+    }
 }
