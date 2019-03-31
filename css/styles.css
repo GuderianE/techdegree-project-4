@@ -556,5 +556,17 @@ ul {
   color: rgba(152, 217, 190, 0.877);
   font-weight: bold;
 }
+.card .blockquote {
+  border-left: solid 0.5em rgba(152, 217, 190, 0.877);
+  font-size: 2em;
+  padding-left: 0.8em;
+  border-radius: 0.5em;
+}
+
+.headline--secondary {
+  color: rgba(31, 84, 62, 0.877);
+  font-size: 1.2em;
+  font-weight: lighter;
+}
 
 /*# sourceMappingURL=styles.css.map */
