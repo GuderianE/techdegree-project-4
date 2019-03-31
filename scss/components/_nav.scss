@@ -1,3 +1,17 @@
-.nav {
-    color: $color--accend;
+// ===============================
+// Navigation
+// ===============================
+
+
+
+.nav__item {
+  margin: 10px;
+  padding: 10px;
+  line-height: $line--height;
+  border-radius: 10px;
+  transition-duration: 500ms;
+  &:hover {
+    background-color: $color--base;
+    transition-delay: 200ms;
+  }
 }

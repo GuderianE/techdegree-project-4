@@ -1,22 +1,27 @@
-// =============================================================================
+// ==============================
 // Global Variables
-// =============================================================================
+// ==============================
 
 
 // font-family
 $font-url--google       : 'https://fonts.googleapis.com/css?family=Raleway Titillium+Web';
-$font-family--primary   : 'Raleway', 'Helvetica Neue', Helvetica, Arial sans-sarif;
+$font-family--primary   : 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-sarif;
 $font-family--secondary : 'Titillium Web', Arial, 'Helvetica Neue';
 
 // text
 $font-size--p: 1.2em;
 $font-size--h: 2em;
 $font-weight--h: bold;
+$line--height: 1.9em;
 
 // colors
-$color--primary: blue;
-$color--secondary: green;
-$color--accend: #000;
+$color--base: rgba(36, 121, 85, 0.877);
+$color-base--dark: darken($color--base, 25%);
+$color-base--light: lighten($color--base, 25%);
+
+$complement: complement($color--base);
+$complement-light: lighten($complement, 30%);
+
 
 //breakpoint
 $breakpoints: (

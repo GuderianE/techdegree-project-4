@@ -4,9 +4,25 @@
 
 * {
     box-sizing: border-box;
+}
+
+.container {
+    width: 0 auto;
     font-family: $font-family--primary;
+    text-align: center;
 }
 
 p {
     font-size: $font-size--p;
+    font-family: $font-family--secondary;
+}
+
+a {
+    text-decoration: none;
+    color: $color-base--dark;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }

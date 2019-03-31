@@ -11,4 +11,9 @@
     flex-wrap: $wrap;
     flex-direction: $dir;
     justify-content: $just;
+    @content
+}
+
+@mixin quiery() {
+    
 }

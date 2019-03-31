@@ -339,11 +339,27 @@ template {
 
 * {
   box-sizing: border-box;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial sans-sarif;
+}
+
+.container {
+  width: 0 auto;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-sarif;
+  text-align: center;
 }
 
 p {
   font-size: 1.2em;
+  font-family: "Titillium Web", Arial, "Helvetica Neue";
+}
+
+a {
+  text-decoration: none;
+  color: rgba(7, 23, 16, 0.877);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .grid__row {
@@ -483,8 +499,16 @@ p {
   }
 }
 
-.nav {
-  color: #000;
+.nav__item {
+  margin: 10px;
+  padding: 10px;
+  line-height: 1.9em;
+  border-radius: 10px;
+  transition-duration: 500ms;
+}
+.nav__item:hover {
+  background-color: rgba(36, 121, 85, 0.877);
+  transition-delay: 200ms;
 }
 
 /*# sourceMappingURL=styles.css.map */

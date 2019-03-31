@@ -7,11 +7,11 @@
 @import 'global-variables';
 
 
-// import mixins
-@import 'mixins';
+// import mixins, funtions, extens
+@import 'mixins',
+        'functions',
+        'extends';
 
-// import placeholders
-@import 'placeholders';
 
 // import functions
 
