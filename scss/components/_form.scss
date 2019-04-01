@@ -4,7 +4,6 @@
 
 .form {
     @include flexy($dir: column, $just: center);
-    margin: 20px;
 
     .input {
     width: 50%;

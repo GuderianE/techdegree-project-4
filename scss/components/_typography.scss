@@ -3,8 +3,6 @@
 // ======================================
 
 .card {
-    width: 90%;
-    margin-left: 1.5em;
     text-align: left;
 
     .headline--primary {
@@ -29,7 +27,6 @@
 }
 
 .headline--secondary {
-    margin-left: 1.5em;
     color: $color-base--dark;
     font-size: $font-size--p;
     font-weight: lighter;

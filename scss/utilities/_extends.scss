@@ -18,3 +18,10 @@
     display: block;
 }
 
+%img {
+    @include flexy($dir: column, $justs: center);
+    width: 40%;
+    height: 30%;
+    margin: 1.5em 0;
+}
+

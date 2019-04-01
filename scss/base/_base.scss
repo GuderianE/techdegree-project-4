@@ -7,7 +7,7 @@
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     font-family: $font-family--primary;
     text-align: center;
@@ -16,6 +16,7 @@
 p {
     font-size: $font-size--p;
     font-family: $font-family--secondary;
+    line-height: $line--height;
 }
 
 a {

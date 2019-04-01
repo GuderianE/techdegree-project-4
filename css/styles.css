@@ -14,6 +14,15 @@ a {
   display: block;
 }
 
+.img--avatar {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 40%;
+  height: 30%;
+  margin: 1.5em 0;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -358,7 +367,7 @@ template {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-sarif;
   text-align: center;
@@ -367,6 +376,7 @@ template {
 p {
   font-size: 1.2em;
   font-family: "Titillium Web", Arial, "Helvetica Neue";
+  line-height: 1.5em;
 }
 
 ul {
@@ -514,7 +524,7 @@ ul {
 .nav__item {
   margin: 1em;
   padding: 1em;
-  line-height: 1.9em;
+  line-height: 1.5em;
   border-radius: 1em;
   transition-duration: 500ms;
 }
@@ -527,7 +537,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px;
 }
 .form .input {
   width: 50%;
@@ -541,9 +550,13 @@ ul {
   background-color: rgba(152, 217, 190, 0.877);
 }
 
+.theme--colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .card {
-  width: 90%;
-  margin-left: 1.5em;
   text-align: left;
 }
 .card .headline--primary {
@@ -565,7 +578,6 @@ ul {
 }
 
 .headline--secondary {
-  margin-left: 1.5em;
   color: rgba(31, 84, 62, 0.877);
   font-size: 1.2em;
   font-weight: lighter;
