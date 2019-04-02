@@ -2,12 +2,11 @@
 //  Extends
 // ======================================
 
-%theme__colors {
+%btn {
     border-radius: 10px;
-    margin: 10px;
+    margin: 20px 10px 10px 10px;
     padding: 10px;
     border: none;
-    color: $white;
     transition-property: background-color;
     transition-duration: 500ms;
 }
@@ -19,7 +18,7 @@
 }
 
 %img {
-    @include flexy($dir: column, $justs: center);
+    @include flexy($dir: column, $just: center);
     width: 40%;
     height: 30%;
     margin: 1.5em 0;

@@ -2,6 +2,8 @@
 //  Buttons
 // ======================================
 
-.theme--colors {
-    @include flexy ($dir: column, $just: center);
+.theme__colors {
+    @include flexy ($just: center);
+    @extend %btn;
 }
+

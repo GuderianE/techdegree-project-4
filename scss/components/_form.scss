@@ -5,18 +5,26 @@
 .form {
     @include flexy($dir: column, $just: center);
 
-    .input {
-    width: 50%;
-    margin-top: 20px;
-    border-bottom: solid 2px $color-base--dark;
+    .form__input {
+    width: 90%;
+    padding: 1em;
+    margin: 20px 20px 0 20px;
+    border-bottom: solid 4px $color-base--dark;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline-style: none;
     }
     
     .btn--default {
         background-color: $color--base;
-        @extend %theme__colors;
+        @extend %btn;
         &:hover {
             background-color: $color-base--light;
         }
     }
 
+    .form__label--hidden {
+        display: none;
+    }
 }

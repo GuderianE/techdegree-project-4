@@ -1,9 +1,8 @@
-.form .btn--default {
+.theme__colors, .form .btn--default {
   border-radius: 10px;
-  margin: 10px;
+  margin: 20px 10px 10px 10px;
   padding: 10px;
   border: none;
-  color: #fff;
   transition-property: background-color;
   transition-duration: 500ms;
 }
@@ -17,7 +16,7 @@ a {
 .img--avatar {
   display: flex;
   flex-direction: column;
-  justify-self: center;
+  justify-content: center;
   width: 40%;
   height: 30%;
   margin: 1.5em 0;
@@ -522,7 +521,7 @@ ul {
 }
 
 .nav__item {
-  margin: 1em;
+  margin: 1em 0;
   padding: 1em;
   line-height: 1.5em;
   border-radius: 1em;
@@ -538,10 +537,15 @@ ul {
   flex-direction: column;
   justify-content: center;
 }
-.form .input {
-  width: 50%;
-  margin-top: 20px;
-  border-bottom: solid 2px rgba(31, 84, 62, 0.877);
+.form .form__input {
+  width: 90%;
+  padding: 1em;
+  margin: 20px 20px 0 20px;
+  border-bottom: solid 4px rgba(31, 84, 62, 0.877);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline-style: none;
 }
 .form .btn--default {
   background-color: rgba(65, 177, 130, 0.877);
@@ -549,10 +553,12 @@ ul {
 .form .btn--default:hover {
   background-color: rgba(152, 217, 190, 0.877);
 }
+.form .form__label--hidden {
+  display: none;
+}
 
-.theme--colors {
+.theme__colors {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
