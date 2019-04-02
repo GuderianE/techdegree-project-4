@@ -16,6 +16,10 @@
     @content
 }
 
-@mixin quiery() {
-    
+@mixin colors($map) {
+    @each $theme, $color in $map {
+        &--#{$theme}{
+            background-color: $color;
+        }
+    }
 }
