@@ -5,5 +5,9 @@
 .theme__colors {
     @include flexy ($just: center);
     @extend %btn;
+    width: 100%;
 }
 
+.btn {
+    @include colors ($color-map);
+}

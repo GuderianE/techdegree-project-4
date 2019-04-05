@@ -16,6 +16,22 @@ $line--height: 1.5em;
 
 // colors
 $white: #fff;
+$black: #000;
+$grey : #999;
+
+$sunglo     : #e7717d;
+$loblolly   : #c2cad0;
+$tea        : #c2b9b0;
+$sand-dune  : #7e685a;
+$wild-willow: #afd275;
+
+$color-map: (
+    default: $wild-willow,
+    success: $loblolly,
+    error  : $sunglo,
+    warning: $tea,
+    info   : $sand-dune
+);
 
 $color--base: rgba(65, 177, 130, 0.877);
 $color-base--dark: darken($color--base, 25%);

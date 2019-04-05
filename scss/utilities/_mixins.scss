@@ -18,8 +18,10 @@
 
 @mixin colors($map) {
     @each $theme, $color in $map {
-        &--#{$theme}{
+        &--#{$theme} {
             background-color: $color;
+            @content
         }
     }
 }
+
