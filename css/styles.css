@@ -394,19 +394,25 @@ ul {
     flex-direction: row;
   }
 }
-.grid__col--default {
+.grid__col--3 {
+  background-color: #acadae;
+}
+.grid__col--4 {
+  background-color: #90ac60;
+}
+.grid__col--5 {
+  background-color: #93194f;
+}
+.grid__col--6 {
+  background-color: #ba9e9f;
+}
+.grid__col--7 {
+  background-color: #30343f;
+}
+.grid__col--8 {
   background-color: #afd275;
 }
-.grid__col--success {
-  background-color: #c2cad0;
-}
-.grid__col--error {
-  background-color: #e7717d;
-}
-.grid__col--warning {
-  background-color: #c2b9b0;
-}
-.grid__col--info {
+.grid__col--12 {
   background-color: #7e685a;
 }
 .grid__col--1 {
@@ -614,7 +620,6 @@ ul {
   font-family: "Titillium Web", Arial, "Helvetica Neue";
   border-left: solid 0.5em rgba(152, 217, 190, 0.877);
   font-size: 2em;
-  font-weight: italic;
   padding-left: 0.8em;
   border-radius: 0.5em;
   margin-bottom: 3em;

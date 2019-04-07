@@ -31,7 +31,13 @@ $gunmetal      : #30343f;
 $silver-chalice: #acadae;
 
 
-
+$color-map: (
+    default : $wild-willow,
+    success: $loblolly,
+    error  : $sunglo,
+    warning: $tea,
+    info   : $sand-dune
+);
 
 
 $colors: (
@@ -40,7 +46,7 @@ $colors: (
         5   : $french-plum,
         6   : $tuscany,
         7   : $gunmetal,
-        8   : $color-base--dark,
+        8   : $wild-willow,
         12  : $sand-dune
 );
 

@@ -23,7 +23,7 @@
 
   // .grid__col
   &__col {
-    @include colors ($color-map);
+    @include colors ($colors);
     // create grid columns dynamically
     // loop through each column size
     @for $i from 1 through 12 {
