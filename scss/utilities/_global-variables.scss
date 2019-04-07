@@ -12,18 +12,35 @@ $font-family--secondary : 'Titillium Web', Arial, 'Helvetica Neue';
 $font-size--p: 1.2em;
 $font-size--h: 2em;
 $font-weight--h: bold;
+$font-weight--p: italic;
 $line--height: 1.5em;
+
 
 // colors
 $white: #fff;
 $black: #000;
 $grey : #999;
 
-$sunglo     : #e7717d;
-$loblolly   : #c2cad0;
-$tea        : #c2b9b0;
-$sand-dune  : #7e685a;
-$wild-willow: #afd275;
+$sunglo        : #e7717d;
+$loblolly      : #c2cad0;
+$tea           : #c2b9b0;
+$sand-dune     : #7e685a;
+$wild-willow   : #afd275;
+$tuscany       : #ba9e9f;
+$asparagus     : #90ac60;
+$french-plum   : #93194f;
+$gunmetal      : #30343f;
+$silver-chalice: #acadae;
+
+$grid-color--map: (
+    3   : $silver-chalice,
+    4   : $asparagus,
+    5   : $french-plum,
+    6   : $tuscany,
+    7   : $gunmetal,
+    8   : $color-base--dark,
+    12  : $sand-dune
+);
 
 $color-map: (
     default: $wild-willow,
