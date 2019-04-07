@@ -20,7 +20,7 @@ a {
   justify-content: center;
   width: 40%;
   height: 30%;
-  margin: 1.5em 0;
+  margin: 3em 0 3em 30%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -541,7 +541,7 @@ ul {
 .form .form__input {
   width: 90%;
   padding: 1em;
-  margin: 20px 0 0 30px;
+  margin: 20px 5% 0 5%;
   border-bottom: solid 4px rgba(31, 84, 62, 0.877);
   border-top: 0;
   border-left: 0;
