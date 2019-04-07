@@ -13,4 +13,5 @@
     background-color: $color--base;
     transition-delay: 200ms;
   }
+  @include media('lg');
 }

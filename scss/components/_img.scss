@@ -6,4 +6,9 @@
     &--avatar {
     @extend %img;
     }
+
+    &--frame {
+        padding: 0.5em;
+        border: solid 0.5px $black;
+    }
 }

@@ -25,3 +25,29 @@
     }
 }
 
+@mixin media($breakpoint) {
+    @media (min-width: $breakpoint) {
+        flex-direction: row;
+    }
+}
+
+@mixin grid {
+    @for $i from 1 through 12 {
+        &--#{$i} {
+            margin-top: 10px;
+            flex-basis: 100%;
+        }
+    }
+    @each $key, $val in $grid-map {
+        @media (max-width: $key + px){
+            @for $i from 1 through $val {
+                $equ: #{$i / $val * 100 + "%"};
+                &--#{$i} {
+                    flex-basis: $equ;
+                    margin-top: 0;
+                }
+            }
+                   
+        }
+    }
+}

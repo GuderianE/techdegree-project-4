@@ -384,6 +384,28 @@ ul {
   padding: 0;
 }
 
+.theme__colors .grid__col--3 {
+  background-color: #acadae;
+}
+.theme__colors .grid__col--4 {
+  background-color: #90ac60;
+}
+.theme__colors .grid__col--5 {
+  background-color: #93194f;
+}
+.theme__colors .grid__col--6 {
+  background-color: #ba9e9f;
+}
+.theme__colors .grid__col--7 {
+  background-color: #30343f;
+}
+.theme__colors .grid__col--8 {
+  background-color: #afd275;
+}
+.theme__colors .grid__col--12 {
+  background-color: #7e685a;
+}
+
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -394,145 +416,102 @@ ul {
     flex-direction: row;
   }
 }
-.grid__col--3 {
-  background-color: #acadae;
-}
-.grid__col--4 {
-  background-color: #90ac60;
-}
-.grid__col--5 {
-  background-color: #93194f;
-}
-.grid__col--6 {
-  background-color: #ba9e9f;
-}
-.grid__col--7 {
-  background-color: #30343f;
-}
-.grid__col--8 {
-  background-color: #afd275;
-}
-.grid__col--12 {
-  background-color: #7e685a;
-}
 .grid__col--1 {
   margin-top: 10px;
   flex-basis: 100%;
-}
-@media (min-width: 768px) {
-  .grid__col--1 {
-    margin-top: 0;
-    flex-basis: 8.3333333333%;
-  }
 }
 .grid__col--2 {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
-  .grid__col--2 {
-    margin-top: 0;
-    flex-basis: 16.6666666667%;
-  }
-}
 .grid__col--3 {
   margin-top: 10px;
   flex-basis: 100%;
-}
-@media (min-width: 768px) {
-  .grid__col--3 {
-    margin-top: 0;
-    flex-basis: 25%;
-  }
 }
 .grid__col--4 {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
-  .grid__col--4 {
-    margin-top: 0;
-    flex-basis: 33.3333333333%;
-  }
-}
 .grid__col--5 {
   margin-top: 10px;
   flex-basis: 100%;
-}
-@media (min-width: 768px) {
-  .grid__col--5 {
-    margin-top: 0;
-    flex-basis: 41.6666666667%;
-  }
 }
 .grid__col--6 {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
-  .grid__col--6 {
-    margin-top: 0;
-    flex-basis: 50%;
-  }
-}
 .grid__col--7 {
   margin-top: 10px;
   flex-basis: 100%;
-}
-@media (min-width: 768px) {
-  .grid__col--7 {
-    margin-top: 0;
-    flex-basis: 58.3333333333%;
-  }
 }
 .grid__col--8 {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
-  .grid__col--8 {
-    margin-top: 0;
-    flex-basis: 66.6666666667%;
-  }
-}
 .grid__col--9 {
   margin-top: 10px;
   flex-basis: 100%;
-}
-@media (min-width: 768px) {
-  .grid__col--9 {
-    margin-top: 0;
-    flex-basis: 75%;
-  }
 }
 .grid__col--10 {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
-  .grid__col--10 {
-    margin-top: 0;
-    flex-basis: 83.3333333333%;
-  }
-}
 .grid__col--11 {
   margin-top: 10px;
   flex-basis: 100%;
-}
-@media (min-width: 768px) {
-  .grid__col--11 {
-    margin-top: 0;
-    flex-basis: 91.6666666667%;
-  }
 }
 .grid__col--12 {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
-  .grid__col--12 {
+@media (max-width: 768px) {
+  .grid__col--1 {
+    flex-basis: 8.3333333333%;
     margin-top: 0;
+  }
+  .grid__col--2 {
+    flex-basis: 16.6666666667%;
+    margin-top: 0;
+  }
+  .grid__col--3 {
+    flex-basis: 25%;
+    margin-top: 0;
+  }
+  .grid__col--4 {
+    flex-basis: 33.3333333333%;
+    margin-top: 0;
+  }
+  .grid__col--5 {
+    flex-basis: 41.6666666667%;
+    margin-top: 0;
+  }
+  .grid__col--6 {
+    flex-basis: 50%;
+    margin-top: 0;
+  }
+  .grid__col--7 {
+    flex-basis: 58.3333333333%;
+    margin-top: 0;
+  }
+  .grid__col--8 {
+    flex-basis: 66.6666666667%;
+    margin-top: 0;
+  }
+  .grid__col--9 {
+    flex-basis: 75%;
+    margin-top: 0;
+  }
+  .grid__col--10 {
+    flex-basis: 83.3333333333%;
+    margin-top: 0;
+  }
+  .grid__col--11 {
+    flex-basis: 91.6666666667%;
+    margin-top: 0;
+  }
+  .grid__col--12 {
     flex-basis: 100%;
+    margin-top: 0;
   }
 }
 
@@ -552,6 +531,11 @@ ul {
 .nav__item:hover {
   background-color: rgba(65, 177, 130, 0.877);
   transition-delay: 200ms;
+}
+@media (min-width: lg) {
+  .nav__item {
+    flex-direction: row;
+  }
 }
 
 .form {
@@ -582,6 +566,7 @@ ul {
 
 .theme__colors {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
@@ -600,6 +585,11 @@ ul {
 }
 .btn--info {
   background-color: #7e685a;
+}
+
+.img--frame {
+  padding: 0.5em;
+  border: solid 0.5px #000;
 }
 
 .card {

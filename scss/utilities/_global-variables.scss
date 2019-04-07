@@ -41,13 +41,13 @@ $color-map: (
 
 
 $colors: (
-        3   : $silver-chalice,
-        4   : $asparagus,
-        5   : $french-plum,
-        6   : $tuscany,
-        7   : $gunmetal,
-        8   : $wild-willow,
-        12  : $sand-dune
+     3  : $silver-chalice,
+     4  : $asparagus,
+     5  : $french-plum,
+     6  : $tuscany,
+     7  : $gunmetal,
+     8  : $wild-willow,
+     12 : $sand-dune
 );
 
 $color--base: rgba(65, 177, 130, 0.877);
@@ -64,4 +64,6 @@ $breakpoints: (
     'lg': 1400px
 );
 
-
+$grid-map: (
+    768: 12
+);

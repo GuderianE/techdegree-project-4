@@ -3,7 +3,7 @@
 // ======================================
 
 .theme__colors {
-    @include flexy ($just: center);
+    @include flexy ($just: center, $wrap: wrap);
     @extend %btn;
     width: 100%;
 }
