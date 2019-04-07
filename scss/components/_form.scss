@@ -17,8 +17,9 @@
     }
     
     .btn--default {
-        background-color: $color--base;
         @extend %btn;
+        background-color: $color--base;
+        margin-bottom: 3em;
         &:hover {
             background-color: $color-base--light;
         }

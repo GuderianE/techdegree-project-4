@@ -394,6 +394,21 @@ ul {
     flex-direction: row;
   }
 }
+.grid__col--default {
+  background-color: #afd275;
+}
+.grid__col--success {
+  background-color: #c2cad0;
+}
+.grid__col--error {
+  background-color: #e7717d;
+}
+.grid__col--warning {
+  background-color: #c2b9b0;
+}
+.grid__col--info {
+  background-color: #7e685a;
+}
 .grid__col--1 {
   margin-top: 10px;
   flex-basis: 100%;
@@ -550,6 +565,7 @@ ul {
 }
 .form .btn--default {
   background-color: rgba(65, 177, 130, 0.877);
+  margin-bottom: 3em;
 }
 .form .btn--default:hover {
   background-color: rgba(152, 217, 190, 0.877);
@@ -595,10 +611,13 @@ ul {
   font-weight: bold;
 }
 .card .blockquote {
+  font-family: "Titillium Web", Arial, "Helvetica Neue";
   border-left: solid 0.5em rgba(152, 217, 190, 0.877);
   font-size: 2em;
+  font-weight: italic;
   padding-left: 0.8em;
   border-radius: 0.5em;
+  margin-bottom: 3em;
 }
 
 .headline--secondary {

@@ -12,9 +12,7 @@ $font-family--secondary : 'Titillium Web', Arial, 'Helvetica Neue';
 $font-size--p: 1.2em;
 $font-size--h: 2em;
 $font-weight--h: bold;
-$font-weight--p: italic;
 $line--height: 1.5em;
-
 
 // colors
 $white: #fff;
@@ -32,22 +30,18 @@ $french-plum   : #93194f;
 $gunmetal      : #30343f;
 $silver-chalice: #acadae;
 
-$grid-color--map: (
-    3   : $silver-chalice,
-    4   : $asparagus,
-    5   : $french-plum,
-    6   : $tuscany,
-    7   : $gunmetal,
-    8   : $color-base--dark,
-    12  : $sand-dune
-);
 
-$color-map: (
-    default: $wild-willow,
-    success: $loblolly,
-    error  : $sunglo,
-    warning: $tea,
-    info   : $sand-dune
+
+
+
+$colors: (
+        3   : $silver-chalice,
+        4   : $asparagus,
+        5   : $french-plum,
+        6   : $tuscany,
+        7   : $gunmetal,
+        8   : $color-base--dark,
+        12  : $sand-dune
 );
 
 $color--base: rgba(65, 177, 130, 0.877);
