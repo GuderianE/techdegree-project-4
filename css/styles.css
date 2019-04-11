@@ -384,25 +384,25 @@ ul {
   padding: 0;
 }
 
-.theme__colors .grid__col--3 {
+.grid__col .theme__colors--3 {
   background-color: #acadae;
 }
-.theme__colors .grid__col--4 {
+.grid__col .theme__colors--4 {
   background-color: #90ac60;
 }
-.theme__colors .grid__col--5 {
+.grid__col .theme__colors--5 {
   background-color: #93194f;
 }
-.theme__colors .grid__col--6 {
+.grid__col .theme__colors--6 {
   background-color: #ba9e9f;
 }
-.theme__colors .grid__col--7 {
+.grid__col .theme__colors--7 {
   background-color: #30343f;
 }
-.theme__colors .grid__col--8 {
+.grid__col .theme__colors--8 {
   background-color: #afd275;
 }
-.theme__colors .grid__col--12 {
+.grid__col .theme__colors--12 {
   background-color: #7e685a;
 }
 
@@ -415,10 +415,6 @@ ul {
   .grid__row {
     flex-direction: row;
   }
-}
-.grid__col--1 {
-  margin-top: 10px;
-  flex-basis: 100%;
 }
 .grid__col--2 {
   margin-top: 10px;
@@ -465,10 +461,6 @@ ul {
   flex-basis: 100%;
 }
 @media (max-width: 768px) {
-  .grid__col--1 {
-    flex-basis: 8.3333333333%;
-    margin-top: 0;
-  }
   .grid__col--2 {
     flex-basis: 16.6666666667%;
     margin-top: 0;
@@ -521,6 +513,22 @@ ul {
   }
 }
 
+@media (min-width: 480px) {
+  .nav {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1400px) {
+  .nav {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .nav__item {
   margin: 1em 0;
   padding: 1em;
@@ -531,11 +539,6 @@ ul {
 .nav__item:hover {
   background-color: rgba(65, 177, 130, 0.877);
   transition-delay: 200ms;
-}
-@media (min-width: lg) {
-  .nav__item {
-    flex-direction: row;
-  }
 }
 
 .form {
@@ -570,6 +573,18 @@ ul {
   justify-content: center;
   width: 100%;
 }
+@media (min-width: 480px) {
+  .theme__colors {
+    display: inline-block;
+    width: 80%;
+  }
+}
+@media (min-width: 1400px) {
+  .theme__colors {
+    display: inline-block;
+    width: 80%;
+  }
+}
 
 .btn--default {
   background-color: #afd275;
@@ -590,6 +605,20 @@ ul {
 .img--frame {
   padding: 0.5em;
   border: solid 0.5px #000;
+}
+@media (min-width: 480px) {
+  .img--logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4em;
+  }
+}
+@media (min-width: 1400px) {
+  .img--logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4em;
+  }
 }
 
 .card {

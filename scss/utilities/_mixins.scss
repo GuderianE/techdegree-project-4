@@ -25,14 +25,39 @@
     }
 }
 
-@mixin media($breakpoint) {
-    @media (min-width: $breakpoint) {
-        flex-direction: row;
+@mixin media-btn {
+    @each $key, $val in $breakpoints {
+        @media (min-width: $key) {
+            display: inline-block;
+            width: 80%;
+        }
+    }
+}
+
+@mixin media-nav {
+    @each $key, $val in $breakpoints {
+        @media (min-width: $key) {
+                // width: 50%;
+                display: flex;
+                flex-basis: 100%;
+                flex-direction: row;
+                justify-content: space-between; 
+        }
+    }
+}
+
+@mixin media-img {
+    @each $key, $val in $breakpoints {
+        @media (min-width: $key) {
+                display: flex;
+                justify-content: flex-start; 
+                margin-left: 4em;
+        }
     }
 }
 
 @mixin grid {
-    @for $i from 1 through 12 {
+    @for $i from 2 through 12 {
         &--#{$i} {
             margin-top: 10px;
             flex-basis: 100%;
@@ -40,7 +65,7 @@
     }
     @each $key, $val in $grid-map {
         @media (max-width: $key + px){
-            @for $i from 1 through $val {
+            @for $i from 2 through $val {
                 $equ: #{$i / $val * 100 + "%"};
                 &--#{$i} {
                     flex-basis: $equ;

@@ -60,10 +60,12 @@ $complement-light: lighten($complement, 30%);
 
 //breakpoint
 $breakpoints: (
-    'sm': 480px,
-    'lg': 1400px
+    480px: 'sm',
+    1400px: 'lg'
 );
 
 $grid-map: (
     768: 12
 );
+
+

@@ -4,10 +4,11 @@
 
 .theme__colors {
     @include flexy ($just: center, $wrap: wrap);
+    @include media-btn;
     @extend %btn;
     width: 100%;
 }
 
 .btn {
-    @include colors ($color-map);
+    @include colors($color-map);
 }

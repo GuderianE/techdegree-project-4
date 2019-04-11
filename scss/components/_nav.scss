@@ -2,16 +2,17 @@
 // Navigation
 // ===============================
 
-
-.nav__item {
-  margin: 1em 0;
-  padding: 1em;
-  line-height: $line--height;
-  border-radius: 1em;
-  transition-duration: 500ms;
-  &:hover {
-    background-color: $color--base;
-    transition-delay: 200ms;
+.nav {
+  @include media-nav;
+  &__item {
+    margin: 1em 0;
+    padding: 1em;
+    line-height: $line--height;
+    border-radius: 1em;
+    transition-duration: 500ms;
+    &:hover {
+      background-color: $color--base;
+      transition-delay: 200ms;
+    }
   }
-  @include media('lg');
 }
