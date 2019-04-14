@@ -62,3 +62,15 @@
     }
   
 }
+
+@mixin grid-mq {
+    @each $key, $val in $grid-map {
+        @for $i from 2 through $val {
+            $equ: #{$i / $val * 100 + "%"};
+            &--#{$i} {
+                flex-basis: $equ;
+                margin-top: 0;
+            }
+        }
+    }
+}

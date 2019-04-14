@@ -2,6 +2,8 @@
 // Global Variables
 // ==============================
 
+//global
+$max-width: 1400px;
 
 // font-family
 $font-url--google       : 'https://fonts.googleapis.com/css?family=Raleway Titillium+Web';
@@ -63,6 +65,8 @@ $breakpoint-sm: 1px;
 $breakpoint-med: 768px;
 $breakpoint-lg: 1400px;
 
+
+//maps
 $grid-map: (
     768: 12
 );

@@ -6,7 +6,7 @@
     &--avatar {
         @extend %img;
         @include mq(medium){
-
+            margin-top: 2.5em;
         }
     }
 

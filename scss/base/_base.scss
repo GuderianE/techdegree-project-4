@@ -4,6 +4,10 @@
 
 * {
     box-sizing: border-box;
+    max-width: $max-width;
+    @include mq(medium) {
+        margin: 0 auto;
+    }
 }
 
 .container {
@@ -17,6 +21,7 @@ p {
     font-size: $font-size--p;
     font-family: $font-family--secondary;
     line-height: $line--height;
+    margin: 2em 0;
 }
 
 a {
