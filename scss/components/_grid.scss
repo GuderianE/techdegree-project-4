@@ -8,18 +8,8 @@
 
 // grid base class
 
-
-  .grid__col {
-  .theme__colors & {
-    @include colors ($colors);
-  }
-    
-  }
-  
-
-
 .grid {
-
+  
   // .grid__row
   &__row {
     padding: 1em 10px;
@@ -27,37 +17,35 @@
     flex-direction: column;
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq(medium) {
       flex-direction: row;
     }
   }
-
   // .grid__col
   &__col {
-    // create grid columns dynamically
-    // loop through each column size
-    // @for $i from 1 through 12 {
-
-   
-    //   &--#{$i} {
-    //     margin-top: 10px;
-    //     flex-basis: 100%;
-    //     @media (min-width: 768px) {
-    //       margin-top: 0;
-    //       flex-basis: #{$i / 12 * 100 + "%"} ;
-        @include grid;
-   
-    
+      @include colors($colors);
+      @include grid;
+      @include mq(medium) {
+        @each $key, $val in $grid-map {
+          @for $i from 2 through $val {
+              $equ: #{$i / $val * 100 + "%"};
+              &--#{$i} {
+                  flex-basis: $equ;
+                  margin-top: 0;
+              }
+          }
+  }
+      }
+        // @include colors ($colors);
   }
 }
-
 // targets all elements with classes that begin with grid__col
 [class^=grid__col] {
   // grid__col + grid__col, targets two sibling columns
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq(medium) {
 
       // add grid gutter
       margin-left: 10px;

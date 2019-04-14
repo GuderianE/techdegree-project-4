@@ -4,6 +4,9 @@
 
 .form {
     @include flexy($dir: column, $just: center);
+    @include mq(medium) {
+        padding: 1.7em;
+    }
 
     .form__input {
     width: 90%;

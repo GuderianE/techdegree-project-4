@@ -18,40 +18,37 @@
 
 @mixin colors($map) {
     @each $theme, $color in $map {
-        &--#{$theme} {
+        &--#{$theme}.theme__colors {
             background-color: $color;
             @content
         }
     }
 }
 
-@mixin media-btn {
-    @each $key, $val in $breakpoints {
-        @media (min-width: $key) {
-            display: inline-block;
-            width: 80%;
+@mixin btn-map($map) {
+    @each $theme in $map {
+        &--#{$theme} {
+            @content
         }
     }
 }
 
-@mixin media-nav {
-    @each $key, $val in $breakpoints {
-        @media (min-width: $key) {
-                // width: 50%;
-                display: flex;
-                flex-basis: 100%;
-                flex-direction: row;
-                justify-content: space-between; 
+
+
+@mixin mq($break) {
+    @if $break == "small" {
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-med) {
+            @content
         }
     }
-}
-
-@mixin media-img {
-    @each $key, $val in $breakpoints {
-        @media (min-width: $key) {
-                display: flex;
-                justify-content: flex-start; 
-                margin-left: 4em;
+    @else if $break == "medium" {
+        @media (min-width: $breakpoint-med + 1) {
+            @content
+        }
+    }
+    @else if $break =="large" {
+        @media (min-width: $breakpoint-lg) {
+            @content
         }
     }
 }
@@ -63,16 +60,5 @@
             flex-basis: 100%;
         }
     }
-    @each $key, $val in $grid-map {
-        @media (max-width: $key + px){
-            @for $i from 2 through $val {
-                $equ: #{$i / $val * 100 + "%"};
-                &--#{$i} {
-                    flex-basis: $equ;
-                    margin-top: 0;
-                }
-            }
-                   
-        }
-    }
+  
 }

@@ -59,13 +59,20 @@ $complement-light: lighten($complement, 30%);
 
 
 //breakpoint
-$breakpoints: (
-    480px: 'sm',
-    1400px: 'lg'
-);
+$breakpoint-sm: 1px;
+$breakpoint-med: 768px;
+$breakpoint-lg: 1400px;
 
 $grid-map: (
     768: 12
+);
+
+$btn-map: (
+   default,
+   success,
+   error,
+   warning,
+   info,
 );
 
 

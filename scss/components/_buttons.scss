@@ -3,12 +3,27 @@
 // ======================================
 
 .theme__colors {
-    @include flexy ($just: center, $wrap: wrap);
-    @include media-btn;
+    @include flexy ($just: flex-start, $wrap: wrap);
     @extend %btn;
-    width: 100%;
+    @include mq(small);
+    @include mq(medium) {
+        justify-content: center;
+    }
+    
 }
 
 .btn {
-    @include colors($color-map);
+    @include colors($color-map) {
+        color: $white;
+    }
+    @include btn-map($btn-map) {
+        @include mq(small) {
+            justify-content: center; 
+        }
+        @include mq(medium) {
+            width: 15%;
+            display: inline-block;
+            margin: 1em;
+        }
+    }
 }
