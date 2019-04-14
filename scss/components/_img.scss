@@ -5,6 +5,7 @@
 .img {
     &--avatar {
         @extend %img;
+        width: 45%;
     }
 
     &--frame {
@@ -17,8 +18,11 @@
     }
 
     &--logo{
-   @include mq(medium) {
-       display: flex;
+        @include mq(small) {
+            margin-bottom: 2em;
+        }
+        @include mq(medium) {
+            display: flex;
    }
     
   }
