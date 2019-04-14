@@ -4,12 +4,14 @@
 
 .form {
     @include flexy($dir: column, $just: center);
-    @include mq(medium);
+    @include mq(medium) {
+        margin-left: 2em;
+    }
 
     .form__input {
     width: 90%;
     padding: 1em;
-    margin: 20px 5% 0 5%;
+    margin: 2em 5% 0 5%;
     border-bottom: solid 4px $color-base--dark;
     border-top: 0;
     border-left: 0;
@@ -20,7 +22,12 @@
     .btn--default {
         @extend %btn;
         background-color: $color--base;
-        margin-bottom: 3em;
+        @include mq(medium) {
+            margin-top: 2em;
+        }
+        @include mq(small) {
+            margin-bottom: 3em;
+        }
         &:hover {
             background-color: $color-base--light;
         }

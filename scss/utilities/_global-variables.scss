@@ -15,6 +15,7 @@ $font-size--p: 1.2em;
 $font-size--h: 2em;
 $font-weight--h: bold;
 $line--height: 1.5em;
+$text--transform: uppercase;
 
 // colors
 $white: #fff;
@@ -29,7 +30,7 @@ $wild-willow   : #afd275;
 $tuscany       : #ba9e9f;
 $asparagus     : #90ac60;
 $french-plum   : #93194f;
-$gunmetal      : #30343f;
+$mid-gray      : #5d5f66;
 $silver-chalice: #acadae;
 
 
@@ -47,7 +48,7 @@ $colors: (
      4  : $asparagus,
      5  : $french-plum,
      6  : $tuscany,
-     7  : $gunmetal,
+     7  : $mid-gray,
      8  : $wild-willow,
      12 : $sand-dune
 );

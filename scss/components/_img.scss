@@ -5,15 +5,15 @@
 .img {
     &--avatar {
         @extend %img;
-        @include mq(medium){
-            margin-top: 2.5em;
-        }
     }
 
     &--frame {
         width: 90%;
         padding: 0.5em;
         border: solid 0.5px $black;
+        @include mq(small) {
+            margin-bottom: 2em;
+        }
     }
 
     &--logo{
