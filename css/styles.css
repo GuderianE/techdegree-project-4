@@ -17,12 +17,9 @@ a {
 }
 
 .img--avatar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 40%;
-  height: 30%;
-  margin: 3em 0 3em 30%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 1.7em;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
