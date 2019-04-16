@@ -3,9 +3,10 @@
 // ======================================
 
 .theme__colors {
-    @include flexy ($just: flex-start, $wrap: wrap);
     @extend %btn;
-    @include mq(small);
+    @include mq(small) {
+        @include flexy ($just: flex-start, $wrap: wrap);   
+    }
     @include mq(medium) {
         justify-content: center;
     }

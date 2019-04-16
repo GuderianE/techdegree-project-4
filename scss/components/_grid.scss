@@ -12,10 +12,8 @@
   
   // .grid__row
   &__row {
+    @include flexy($dir: column, $just: center);
     padding: 1em 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     @include mq(medium) {
       flex-direction: row;
     }
@@ -25,12 +23,12 @@
   }
   // .grid__col
   &__col {
+    // @include colors ($colors);
       @include colors($colors);
       @include grid;
       @include mq(medium) {
         @include grid-mq;
       }
-        // @include colors ($colors);
   }
 }
 // targets all elements with classes that begin with grid__col

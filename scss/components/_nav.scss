@@ -16,7 +16,7 @@
     }
   }
   @include mq(medium) {
-    display: flex;
+    @include flexy;
     width: 70%;
   }
 }
